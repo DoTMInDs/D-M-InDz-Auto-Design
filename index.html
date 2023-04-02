@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WebSite Design</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="logo.png">
+                <h1>D•M<span>•InDz</span></h1>
+            </div>
+            <div class="menu">
+                <ul id="menulist" class="menu-list">
+                    <button><a href="#" onclick="opensign()"> JOIN US</a></button>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#resorces">RESOURCES</a></li>
+                    <li><a href="#design">DESIGN</a></li>
+                    <li><a href="#Contract">CONTACT</a></li>
+                    <div id="menumark" class="menu-mark" onclick="closemenu()">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </div>
+                </ul>                            
+            </div>
+
+            <div class="account">
+                <button class="button"><a href="#" onclick="openlog()">Log-in </a></button>
+                <button class="button"><a href="#" onclick="opensign()">Sign-up </a></button>
+            </div>
+            <div id="menubar" class="menu-bar" onclick="openmenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="title-content">
+        <h1>About</h1>
+        <div class="row">
+            <div class="col-1">
+                <div class="content">
+                    <h2>DoTMoNDs Design & <br><span>Development</span> <br>Course</h2>
+                    <p>Dotmond Industries is a Motorcar Garage dedicated facility not only providing full customization  
+                        and modification services but also complete maitainance and repair for any make and model, 
+                        body modification, or anything in between, Dotmond Industries got you covered.
+                        We also design cars and manufacture them. </p>
+
+                    <div class="join-us">
+                        <button><a href="#" onclick="opensign()"> JOIN US</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-title">
+                    <img src="img/car_image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------services-section------------- -->
+    <div id="services">
+        <h1>Services</h1>
+        <div class="service-container">
+            <div class="services-card">
+                    <img src="img/General repair.JPG" alt="">
+                <h2>General Repair</h2>
+                <p>Minor & Major Services, Under Body Repair,
+                     Mechanical Repair, Electrical Repair, 
+                     Other General Repair.</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Brakes Service.JPG" alt="">
+                <h2>Brakes Service</h2>
+                <p>Free Brakes Inspection, Car Brakes Service,
+                     Brake Pads Change, Brake Disks Change, 
+                     Brake Disks Skimming Brake Noise Repair .</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Oil Change.JPG" alt="">
+                <h2>Oil Change Service</h2>
+                <p>Premium Quality Oil Change,
+                    All Fluids Topup Oil Filter Change,
+                    Air Filter Cleaning, Free Full Inspection .</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/AC.JPG" alt="">
+                <h2>Car AC Repair & Service</h2>
+                <p>Free Car AC Inspection, Complete AC Repair & Service,
+                     AC Gas Refill, AC Smell Repair & Service & More…</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Engine.JPG" alt="">
+                <h2>Engine Repair / Rebuild</h2>
+                <p>Car Engine Inspection, Engine Overhauling, 
+                    Rebuild & Repair, Engine Service, 
+                    Engine Oil & Filter Change, 
+                    Engine Efficiency Service.</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Gear Box.JPG" alt="">
+                <h2>Gearbox / Transmission Repair</h2>
+                <p>Free Car Gearbox / Transmission Inspection & Estimate,
+                     Transmission Overhauling & Repair, 
+                     Transmission Oil .</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Suspension.JPG" alt="">
+                <h2>Suspension Repair</h2>
+                <p>Free Car Suspension Inspection, Car Shocks,
+                     Struts, Axles, Complete Under Car Suspension,
+                      Alignments.</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Auto parts.JPG" alt="">
+                <h2>Auto parts</h2>
+                <p>Auto Genuine Parts, Mirrors, Front Windscreen,
+                     Door Windows, Other Electrical & Mechanical
+                      Parts with Fixing & Service.</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Pick up.JPG" alt="">
+                <h2>Free Pick Up</h2>
+                <p>Free Pickup From Office, Home Or Anywhere in Ghana ! 
+                    We Service Your Car & Deliver Back To You.</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Tyres.JPG" alt="">
+                <h2>Tyres Shop</h2>
+                <p>Car Tyre Change At Best Prices, 
+                    Tyres Rotation, New Rims & Rims Repair, 
+                    Wheel Alignment & Balancing</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Conputer.JPG" alt="">
+                <h2>Computer Inspection & Dignostics</h2>
+                <p>Free Car Computer Scanning, Inspection & Diagnostics. 
+                    Pre-Purchase Inspection and Pre-Purchase Inspection..</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Steering.JPG" alt="">
+                <h2>Steering Repair</h2>
+                <p>Free Car Computer Scanning, Inspection & Diagnostics. 
+                    Pre-Purchase Inspection and Pre-Purchase Inspection..</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Windscreen.JPG" alt="">
+                <h2>Auto Glass / Windscreen</h2>
+                <p>Auto Glass Replacement For All Car Models
+                     & Brands Windscreen Fixing & Replacement.
+                      Door Glass Replacement.</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Battery.JPG" alt="">
+                <h2>Auto Glass / Windscreen</h2>
+                <p>Auto Glass Replacement For All Car Models
+                     & Brands Windscreen Fixing & Replacement.
+                      Door Glass Replacement.</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Wheel.JPG" alt="">
+                <h2>Wheel Alignment</h2>
+                <p>Wheel Alignment, Wheel Balancing,
+                     and other Tyres Service at D•M•InDs
+                      Auto Center in Ghana</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Accident.JPG" alt="">
+                <h2>Car Accident</h2>
+                <p>Collision Repair, Minor 
+                    and Major Car Accident Repair 
+                    for American, German, Exotic,
+                     and all Luxury cars</p>
+            </div>
+            <div class="services-card">
+                    <img src="img/Vehicle Modification.JPG" alt="">
+                <h2>Vehicle Modification</h2>
+                <p>Experienced Vehicle Modification Technicians.
+                     Convert Your Cars Shape To Aventador Or More.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------resorces-section------------- -->
+    <div id="resorces">
+        <h1>Resources</h1>
+        <div class="video-section">
+            <div class="videos">
+                <video src="vid/vid_1.MOV" controls loop autoplay muted></video>
+            </div>
+
+            <div class="videos">
+                <video src="vid/vid_2.MOV" controls loop autoplay muted></video>
+            </div>
+
+            <div class="videos">
+                <video src="vid/vid_3.MOV" controls loop autoplay muted></video>
+            </div>
+           
+            <div class="videos">
+                <video src="vid/vid_.MOV" controls loop autoplay muted></video>
+            </div>
+            
+            <div class="videos">
+                <video src="vid/vid_2.MOV" controls loop autoplay muted></video>
+            </div>
+           
+            <div class="videos">
+                <video src="vid/vid_1.MOV" controls loop autoplay muted></video>
+            </div>
+        </div>
+        <div class="join-us">
+            <button><a href="#"> See more</a></button>
+        </div>
+    </div>
+
+     <!-- --------------------------------Design-section------------------------- -->
+     <div id="design">
+        <h1>Design</h1>
+        <div class="design-container">
+            <div class="design-images">
+                <img src="img/IMG_1.JPG" alt="">
+                <h2>Awesome Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_2.JPG" alt="">
+                <h2>Awesome Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_3.JPG" alt="">
+                <h2>Awesome Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_4.JPG" alt="">
+                <h2>Awesome Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_5.JPG" alt="">
+                <h2>Awesome Batmobile Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_6.JPG" alt="">
+                <h2>Awesome Batmobile Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_7.JPG" alt="">
+                <h2>Awesome Future Automobile Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_8.JPG" alt="">
+                <h2>Awesome SUV Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_9.JPG" alt="">
+                <h2>Awesome Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_10.JPG" alt="">
+                <h2>Awesome Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_11.JPG" alt="">
+                <h2>Awesome Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <video src="vid/My Movie 12.mov" controls autoplay loop muted></video>
+                <h2>Awesome Interior Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_12.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_13.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_14.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_15.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_16.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_17.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_18.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_19.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_20.JPG" alt="">
+                <h2>Aesthetic Interiior Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_21.JPG" alt="">
+                <h2>Aesthetic BMW Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_22.JPG" alt="">
+                <h2>Aesthetic Interior Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_23.JPG" alt="">
+                <h2>Aesthetic Honda Civic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_24.JPG" alt="">
+                <h2>Aesthetic Honda Civic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_25.JPG" alt="">
+                <h2>Aesthetic Honda Civic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_26.JPG" alt="">
+                <h2>Aesthetic Honda Civic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_27.JPG" alt="">
+                <h2>Aesthetic Honda Civic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+            <div class="design-images">
+                <img src="img/IMG_2.JPG" alt="">
+                <h2>Aesthetic Design</h2>
+                <p>We give you the Best!</p>
+            </div>
+        </div>
+     </div>
+     <!-- --------------------------------service-contract-section------------------------- -->
+    <div id="Contract">
+        <div class="service-contract">
+            <div class="contract-form">
+                <h2>Get Your Auto Service Contract Now !!!</h2>
+                <form id="form-contract" action="/">
+                    <div class="messages-container">
+                        <h3 id="message"></h3>
+                    </div>
+                    <div class="input-box">
+                        <label for="name">Name</label> <br>
+                        <input type="name" id="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label> <br>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Phone</label> <br>
+                        <input type="phone" id="phone" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="car_make">Car Make</label> <br>
+                        <input type="text" id="make" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="car_model">Car Model</label> <br>
+                        <input type="text" id="model" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="message">Message</label> <br>
+                        <textarea class="form-control" name="" id="" rows="20" cols="60"></textarea>
+                    </div>
+                    <div class="vector">
+                        <img src="img/car-change.jpg" alt="">
+                    </div>
+                    <button id = "click" onclick="return sendEvent()">SEND</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------footer-section------------------------- -->
+    <div class="footer">
+        <div class="navbar footer-navbar">
+            <div class="icon footer-icons">
+                <img src="logo.png" class="logo footer-logo">
+                <h1>D.<span>InDs</span></h1>
+            </div>
+            <div class="address">
+                <h4>Contact US</h4>
+                <ul>
+                    <li><a href="#">+233 59 736 2178</a></li>
+                    <li><a href="#">dotmondinds.domain.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Also Reach Us </h4>
+                <div class="media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="copy" class="copyright">
+            <p>Copyright © D•MoND InDs. Made by <img src="logo.png" alt="" class="copyright-logo" width="25" height="25"> D•MInDs</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
