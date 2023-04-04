@@ -4,48 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My WebSite Design</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>DotMonD AuTo Industries*(D•M•InDz)*</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <img src="logo.png">
-                <h1>D•M<span>•InDz</span></h1>
-            </div>
-            <div class="menu">
-                <ul id="menulist" class="menu-list">
-                    <button><a href="#" onclick="opensign()"> JOIN US</a></button>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#resorces">RESOURCES</a></li>
-                    <li><a href="#design">DESIGN</a></li>
-                    <li><a href="#Contract">CONTACT</a></li>
-                    <div id="menumark" class="menu-mark" onclick="closemenu()">
-                        <i class="fa-regular fa-circle-xmark"></i>
-                    </div>
-                </ul>                            
-            </div>
-
-            <div class="account">
-                <button class="button"><a href="#" onclick="openlog()">Log-in </a></button>
-                <button class="button"><a href="#" onclick="opensign()">Sign-up </a></button>
-            </div>
-            <div id="menubar" class="menu-bar" onclick="openmenu()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+    <div id="home" class="container">
+        <div class="header-container">
+            <div class="nav-bar">
+                <div class="icon-logo">
+                    <img src="logo.png" alt="">
+                    <h1>D•<span>M•</span>InDz</h1>
+                </div>
+                <div class="menu-list">
+                    <ul id="list">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#resorces">RESOURCES</a></li>
+                        <li><a href="#design">DESIGN</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        <a href="#"><i class="fa-regular fa-circle-user" onclick="goToLogin()"></i></a>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+              
+                <div id="user" class="user">
+                    <i class="fa-sharp fa-solid fa-caret-down fa-beat fa-2xl"></i>
+                    <i class="fa-regular fa-circle-user">
+                        <ul class="drop-login">
+                            <li><a href="#" onclick="goToLogin()">Login</a></li>
+                            <li><a href="#" onclick="goToSignin()">Sign</a></li>
+                        </ul>
+                    </i>
+                </div>
             </div>
         </div>
     </div>
+    <!-- ----------------------about-section------------------- -->
     <div id="about" class="title-content">
         <h1>About</h1>
         <div class="row">
@@ -64,14 +65,13 @@
             </div>
             <div class="col-2">
                 <div class="col-title">
-                    <img src="img/car_image.jpg" alt="">
+                    <img src="img/fac_image.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- -----------------------------services-section------------- -->
-    <div id="services">
+     <!-- -----------------------------services-section------------- -->
+     <div id="services">
         <h1>Services</h1>
         <div class="service-container">
             <div class="services-card">
@@ -198,36 +198,35 @@
         <h1>Resources</h1>
         <div class="video-section">
             <div class="videos">
-                <video src="vid/vid_1.MOV" controls loop autoplay muted></video>
+                <video src="vid/NEW Mercedes C-Class 2022 - PRODUCTION plant in Germany (This is how it's made) - YouTube 2.MOV" controls loop autoplay muted></video>
             </div>
 
             <div class="videos">
-                <video src="vid/vid_2.MOV" controls loop autoplay muted></video>
+                <video src="vid/NEW Mercedes C-Class 2022 - PRODUCTION plant in Germany (This is how it's made) - YouTube 3.MOV" controls loop autoplay muted></video>
             </div>
 
             <div class="videos">
-                <video src="vid/vid_3.MOV" controls loop autoplay muted></video>
+                <video src="vid/NEW Mercedes C-Class 2022 - PRODUCTION plant in Germany (This is how it's made) - YouTube 4.MOV" controls loop autoplay muted></video>
             </div>
            
             <div class="videos">
-                <video src="vid/vid_.MOV" controls loop autoplay muted></video>
+                <video src="vid/NEW Mercedes C-Class 2022 - PRODUCTION plant in Germany (This is how it's made) - YouTube.MOV" controls loop autoplay muted></video>
             </div>
             
             <div class="videos">
-                <video src="vid/vid_2.MOV" controls loop autoplay muted></video>
+                <video src="vid/NEW Mercedes C-Class 2022 - PRODUCTION plant in Germany (This is how it's made) - YouTube 3.MOV" controls loop autoplay muted></video>
             </div>
            
             <div class="videos">
-                <video src="vid/vid_1.MOV" controls loop autoplay muted></video>
+                <video src="vid/NEW Mercedes C-Class 2022 - PRODUCTION plant in Germany (This is how it's made) - YouTube 2.MOV" controls loop autoplay muted></video>
             </div>
         </div>
         <div class="join-us">
             <button><a href="#"> See more</a></button>
         </div>
     </div>
-
      <!-- --------------------------------Design-section------------------------- -->
-     <div id="design">
+    <div id="design">
         <h1>Design</h1>
         <div class="design-container">
             <div class="design-images">
@@ -377,32 +376,61 @@
             </div>
         </div>
      </div>
-     <!-- --------------------------------service-contract-section------------------------- -->
-    <div id="Contract">
+   
+     <!-- --------------------------------------contact area----------------------------- -->
+     <div id="contact">
+        <h2 class="work">Contact Me</h2>
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i>esmondabban3@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>(+233) 59 736 2178</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="text" name="email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn_1">submit</button>
+                    </form>
+                </div>
+            </div>
+        <!-- </div> -->
+            
+    </div>
+       <!-- --------------------------------service-contract-section------------------------- -->
+       <div id="Contract">
         <div class="service-contract">
             <div class="contract-form">
                 <h2>Get Your Auto Service Contract Now !!!</h2>
-                <form id="form-contract" action="/">
+                <form id="form-contract" action="">
                     <div class="messages-container">
                         <h3 id="message"></h3>
                     </div>
-                    <div class="input-box">
+                    <div class="contract-input-box">
                         <label for="name">Name</label> <br>
                         <input type="name" id="name" required>
                     </div>
-                    <div class="input-box">
+                    <div class="contract-input-box">
                         <label for="email">Email</label> <br>
                         <input type="email" id="email" required>
                     </div>
-                    <div class="input-box">
+                    <div class="contract-input-box">
                         <label for="phone">Phone</label> <br>
                         <input type="phone" id="phone" required>
                     </div>
-                    <div class="input-box">
+                    <div class="contract-input-box">
                         <label for="car_make">Car Make</label> <br>
                         <input type="text" id="make" required>
                     </div>
-                    <div class="input-box">
+                    <div class="contract-input-box">
                         <label for="car_model">Car Model</label> <br>
                         <input type="text" id="model" required>
                     </div>
@@ -413,18 +441,21 @@
                     <div class="vector">
                         <img src="img/car-change.jpg" alt="">
                     </div>
-                    <button id = "click" onclick="return sendEvent()">SEND</button>
+                    
                 </form>
-                
+                <button id = "click" onclick="return sendEvent()">SEND</button>
             </div>
         </div>
     </div>
+    <div class="up">
+        <a href="#home"><i class="fa-solid fa-circle-chevron-up"></i></a>
+     </div>
     <!-- --------------------------------footer-section------------------------- -->
     <div class="footer">
         <div class="navbar footer-navbar">
-            <div class="icon footer-icons">
+            <div class="icon-logo footer-icons">
                 <img src="logo.png" class="logo footer-logo">
-                <h1>D.<span>InDs</span></h1>
+                <h1>D•<span>M•</span>InDz</h1>
             </div>
             <div class="address">
                 <h4>Contact US</h4>
@@ -437,9 +468,9 @@
                 <h4>Also Reach Us </h4>
                 <div class="media">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-skype"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@
                         <li><a href="#design">DESIGN</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                        <a href="#"><i class="fa-regular fa-circle-user" onclick="goToSignin()"></i></a>
+                        <a href="#"><i class="fa-regular fa-circle-user" onclick="goToLogin()"></i></a>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </div>
@@ -46,28 +46,40 @@
             </div>
         </div>
     </div>
-      <!-- -------------------------------login-form-section------------------------- -->
-      <div class="form-container">
+    <!-- -------------------------------login-form-section------------------------- -->
+    <div class="form-container">
         <div class="login-row">
             <div class="form-col-1">
                 <form id="login-form" action="">
-                    <div class="messages-container">
-                        <h3 id="message"></h3>
-                    </div>
-                    <h2>Log-In</h2>
-                    <div class="login-input-box">
-                        <label for="loginUser">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="login-input-box">
-                        <label for="loginPassword">Password</label>
-                        <input type="password" id="password" required>
-                    </div>
-                    <div class="login-check-box-1">
-                        <label for=""><input type="checkbox">Remember</label> 
-                        <a href="#" onclick="goToReset()">Forgot Password</a>
-                    </div>
-                    <button id = "click" onclick="SubmitEvent()">submit</button>    
+                        <div class="messages-container">
+                            <h3 id="message"></h3>
+                        </div>
+                        <h2>Sign Up</h2>
+                        <div class="login-input-box">
+                            <label for="">First Name</label> 
+                            <input type="name" id="firstname" required>  
+                        </div>
+                        <div class="login-input-box">
+                            <label for="">Last Name</label>
+                            <input type="name" id="lastname" required>
+                        </div>
+                        <div class="login-input-box">
+                            <label for="">Email</label> <br>
+                            <input type="email" id="email" required>  
+                        </div>
+                        <div class="login-input-box">
+                            <label for="">Password</label>
+                            <input type="password" id="password" required>   
+                        </div>
+                        <div class="login-input-box">
+                            <label for="conf_password">Confirm Password</label>
+                            <input type="password" id="conf_password" required> 
+                        </div>
+                        <div class="login-check-box-1">
+                            <label for=""><input type="checkbox">Remember</label>
+                            <a href="#" onclick="goToReset()">Forgot Password</a>
+                        </div>
+                        <button id = "click" onclick="SubmitEvent()">submit</button>
                 </form> 
             </div>
             <div class="form-col-2">
@@ -77,8 +89,8 @@
             </div>
         </div>
     </div>
-    <!-- ---------------------------footer-area---------------------- -->
-    <div class="footer">
+     <!-- ---------------------------footer-area---------------------- -->
+     <div class="footer">
         <div class="navbar footer-navbar">
             <div class="icon-logo footer-icons">
                 <img src="logo.png" class="logo footer-logo">
