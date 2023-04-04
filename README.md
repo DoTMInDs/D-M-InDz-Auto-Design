@@ -1,1 +1,1 @@
-# DoTMoND-Auto-Design
+# D•M•InDz-Auto-Design
